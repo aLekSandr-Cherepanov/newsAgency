@@ -1,0 +1,175 @@
+/* -------- Footer --------- */
+
+.footer {
+  color: #ffffff;
+
+  background-color: #00122f;
+}
+
+.footer-top {
+  padding-top: 46px;
+  padding-bottom: 48px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-top__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* --- footer-menu --- */
+
+.footer-menu__list {
+  margin: 0;
+  padding: 0;
+
+  columns: 2;
+  list-style-type: none;
+}
+
+.footer-menu__item {
+  line-height: 2em;
+}
+
+.footer-menu__link:hover {
+  color: #0072bc;
+}
+
+
+/* --- footer-about --- */
+
+.footer-about__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer-about__item {
+  line-height: 2em;
+}
+
+.footer-about__link:hover {
+  color: #0072bc;
+}
+
+/* --- footer-logo --- */
+
+.footer-logo {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* --- social-buttons --- */
+
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 0;
+  margin-bottom: 41px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.socials__item {
+  display: block;
+  margin-right: 20px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;  
+  width: 40px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.socials__link:hover {
+  background-color: #0072bc;
+  border-color: #0072bc;
+}
+
+.vk {
+  background-image: url("../img/vk_icon.png");
+}
+
+.fb {
+  background-image: url("../img/fb_icon.png");
+}
+
+.twitter {
+  background-image: url("../img/twitter_icon.png");
+}
+
+.instagram {
+  background-image: url("../img/instagram_icon.png");
+}
+
+/* --- contacts-list --- */
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.contacts__item {
+  margin-bottom: 1.3em;
+
+  font-size: 1.125rem;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__link {
+  display: block;
+  padding-left: 30px;
+
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.footer__phone {
+  background-image: url("../img/footer-pfone-icon.png");
+}
+
+.footer__email {
+  background-image: url("../img/footer-email-icon.png.png");
+}
+
+.footer__phone:hover,
+.footer__email:hover {
+  color: #0072bc;
+}
+
+
+/* --- Copyright --- */
+
+.footer-copyright {
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+
+  font-size: 0.875rem;
+  text-align: center;
+
+  opacity: 0.4;
+}
+
+.footer-copyright > br {
+  display: none;
+}

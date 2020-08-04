@@ -1,0 +1,389 @@
+/* -------- Main --------- */
+
+/* --- main-blocks --- */
+
+.main {
+  padding-top: 22px;
+  margin-bottom: 59px;
+
+  background: linear-gradient(to bottom, #f3f3f3, transparent 15px);
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.news-today {
+  width: 25%;
+
+  background-color: #ffffff;
+}
+
+.news-main {
+  width: calc(50% - 40px);
+
+  background: transparent;
+}
+
+.banners {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  width: 25%;
+}
+
+.news-most-read {
+  display: flex;
+  flex-direction: row-reverse;
+
+  background-color: #ffffff;
+}
+
+.news-list-container {
+  width: 41.2%;
+}
+
+/* --- News-list --- */
+
+.news-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.news-list__item {
+  margin-bottom: 28px;
+}
+
+.news-list__item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* --- News-list (news-today) --- */
+
+.news-today .news-list {
+  margin-bottom: 34px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* --- News-list (news-main) --- */
+
+.news-main .news-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.news-main .news-list__item {
+  width: 47.82%;
+  margin-bottom: 23px;
+}
+
+/* --- News-list (news-most-read) --- */
+
+.news-most-read .news-list {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/*--- news-list-heading ---*/
+
+.news-list-heading {
+  margin: 0 0 28px 0;
+  padding: 23px 20px 23px 18px;
+  
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  word-wrap: break-word;
+}
+
+.news-list-heading:hover {
+  color: #0072bc;
+}
+
+/* --- News-item --- */
+
+.news-item__image {
+  display: block;
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.news-item__heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.429em;
+  letter-spacing: 0.35px;
+}
+
+.news-item__heading:hover {
+  color: #0072bc;
+}
+
+.news-item__props {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.news-item__label {
+  margin-right: auto;
+
+  font-size: 0.75rem;
+  color: #91919f;
+}
+
+.news-item__label:hover {
+  color: #0072bc;
+}
+
+.news-item__label::before {
+  content: "/";
+}
+
+.news-item__time {
+  min-height: 11px;
+  padding-left: 18px;
+
+  font-size: 0.75rem;
+
+  background-image: url('../img/news-item-time.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.news-item__comments-count {
+  min-height: 11px;
+  margin-left: 15px;
+  padding-left: 18px;
+
+  font-size: 0.75rem;
+
+  background-image: url('../img/news-item-comments.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+/* --- News-item (news-main) --- */
+
+.news-main .news-item__heading {
+  font-weight: bold;
+}
+
+
+/* --- News-item (news-most-read) --- */
+
+.news-most-read .news-item__heading {
+  line-height: 1.375em;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+/* ---news-with-picture--- */
+
+.news-with-picture {
+  position: relative;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #00122f;
+}
+
+.news-with-picture__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.news-with-picture__label {
+  position: relative;
+  z-index: 20;
+
+  display: block;
+  margin-bottom: 18px;
+
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.news-with-picture__label:hover {
+  color: #0072bc;
+}
+
+.news-with-picture__label::before {
+  content: "/";
+}
+
+.news-with-picture__heading {
+  position: relative;
+  z-index: 20;
+
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.167em;
+  letter-spacing: -0.6px;
+}
+
+.news-with-picture__heading:hover {
+  color: #0072bc;
+}
+
+.news-with-picture__datetime {
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.news-with-picture__date {
+  margin-right: 20px;
+
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.news-with-picture__date:hover {
+  color: #0072bc;
+}
+
+.news-with-picture__time {
+  min-height: 9px;
+  padding-left: 13px;
+
+  font-size: 0.75rem;
+  color: #ffffff;
+
+  background-image: url('../img/news-with-picture-time-white.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.news-with-picture__description {
+  position: relative;
+  z-index: 20;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-size: 0.875rem;
+  color: #ffffff;
+  line-height: 1.429em;
+
+  opacity: 0.7;
+}
+
+/* ---news-with-picture (news-main) --- */
+
+.news-main .news-with-picture {
+  margin-bottom: 20px;
+  padding-top: 113px;
+  padding-bottom: 41px;
+}
+
+/* --- news-with-picture (news-most-read) --- */
+
+.news-most-read .news-with-picture {
+  width: 58.8%;
+  padding-top: 113px;
+  padding-bottom: 58px; 
+}
+
+/* --- all-news-button --- */
+
+.all-news-button{
+  display: block;
+  width: 70%;
+  margin: 0 auto 24px auto;
+  padding: 1em;
+
+  font-size: 0.875rem;
+  text-align: center;
+  color: #0072bc;
+
+  border: 1px solid #0072bc;
+  border-radius: 1.5em;
+}
+
+.all-news-button:hover {
+  color:#ffffff;
+
+  background-color: #0072bc;
+}
+
+
+/* --- Exchange-rate --- */
+
+.exhange-rate__heading {
+  margin: 0 0 5px 0;
+  padding: 23px 20px 23px 18px;
+  
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.exhange-rate__table {
+  width: 100%;
+
+  font-size: 0.875rem;
+
+  border-collapse: collapse;
+  border: none;
+}
+
+.exhange-rate__table-row {
+  height: 30px;
+}
+
+.exhange-rate__table-cell:first-child {
+  width: 60%;
+  padding-left: 18px;
+}
+
+.exhange-rate__table-cell:last-child {
+  width: 40%;
+  padding-right: 18px;
+}
